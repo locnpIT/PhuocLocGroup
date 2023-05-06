@@ -434,19 +434,18 @@ main .home-info .home-info_text{
     background-position-y: 50%;
     background-size: cover;
     padding-bottom: 1rem;
-
 }
 .real-estate_desc{
-    display: flex;
-    gap: 5rem;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* width: 100% - 20rem; */
-    /* width: 100%; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr) );
+    grid-gap: 5rem;
 }
 .real-estate_product{
-    width: 40rem;
+    width: 100%;
 }
 .product-body img{
     width: 100%;
@@ -622,14 +621,10 @@ main .home-info .home-info_text{
 
 .news-bottom{
     padding: 0 10rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-gap: 3rem;
     padding-bottom: 1rem;
-    
-
-    
 }
 .news-info{
     padding: 1.5rem;
@@ -641,15 +636,19 @@ main .home-info .home-info_text{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 100%;
 }
 .news-info .title h3{
     height: 5rem;
 }
 .news-bottom_detail{
-    width: 32rem;
+    width: 100%;
     padding: 1rem;
-    /* height: 40rem; */
     background-color: rgb(229, 229, 229);
+}
+.news-bottom_detail img{
+    width: 100%;
+    object-fit: cover;
 }
 .news-bottom_detail .news-info a{
     position: relative;
