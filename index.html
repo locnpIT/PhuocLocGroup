@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="all.min - Copy.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>PhuocLocGroup</title>
 </head>
 <body>
@@ -63,10 +64,22 @@
                 </li>
                 <li><a href="#" class="header-detail">Liên Hệ</a></li>
                 <li class="icon-search"><a href="#" class="header-detail"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li class="flag-default"><img src="./img/lacodosaovang.jpg" alt=""></li>
+                <li class="flag-default">
+                    <img src="./img/lacodosaovang.jpg" alt="">
+                    <ul class="language is-none">
+                        <li><img src="./img/lacodosaovang.jpg" alt=""> Tiếng Việt</li>
+                        <li><img src="./img/english.jpg" alt=""> Tiếng Anh</li>
+                        <li><img src="./img/japan.png" alt=""> Tiếng Nhật</li>
+                    </ul>
+                
+                </li>
+                
                 
             </ul>
-           </nav> 
+        </nav> 
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
             
         
     </header>
@@ -291,7 +304,7 @@
                     <h2>tin tức</h2>
                 </div>
                 <ul class="news-head_right">
-                    <li class="news-right_item"><a href="#">Tin tức</a></li>
+                    <li class="news-right_item"><a href="#" class="active">Tin tức</a></li>
                     <li class="news-right_item"><a href="#">hoạt động cộng đồng</a></li>
                     <li class="news-right_item"><a href="#">văn hóa công ty</a></li>
                     <li class="news-right_item"><a href="#">tin tức thị trường</a></li>
@@ -485,6 +498,7 @@
 
 
 
+    <script src="app.js"></script>
      <script src="https://kit.fontawesome.com/33b3eab1ae.js" crossorigin="anonymous"></script>
 </body>
 </html>

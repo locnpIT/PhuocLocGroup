@@ -14,6 +14,8 @@
   
   html {
     font-size: 62.5%;
+
+
   }
   
   body {
@@ -49,6 +51,7 @@ header{
     z-index: 10;
     box-shadow: 0px 0px 1px grey;
 }
+
 .logo{
     width: 25rem;
     height: 4rem;
@@ -104,6 +107,7 @@ header{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
+    object-fit: cover;
 }
 .flag-default{
     position: relative;
@@ -121,6 +125,37 @@ header{
     right: 1.7rem;
     top: 50%;
     transform: translate(50%,-50%);
+}
+.flag-default .language{
+    position: absolute;
+    display: block;
+    width: 15rem;
+    left: -1rem;
+    transition: all 0.2s linear;
+    
+    /* opacity: 0;
+    visibility: hidden; */
+    
+}
+.flag-default .language li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.705);
+    transition: all 0.2s linear;
+    border-left: 0.5rem solid transparent;
+}
+.flag-default .language li:hover{
+    background-color: #f0f0f0;
+    border-color: var(--color-hover);
+}
+
+.flag-default .language li:not(:last-child){
+    border-bottom: 1px solid #ccc;
+}
+.flag-default .language li img{
+    margin-right: 1rem;
 }
 /* lam dropdown */
 .dropdown{
@@ -165,7 +200,9 @@ header{
     font-weight: 100;
     color: #000;
 }
-
+.toggle-btn{
+    display: none;
+}
 
 /* ket thuc dropdown */
 /* ket thuc header */
@@ -178,9 +215,11 @@ main{
 
 .banner{
     width: 100%;
-    height: 58rem;
-    object-fit: cover;
+    /* height: 58rem; */
+    height: 90vh;
     background-image: url(./img/banner-news.jpg);
+    background-size: cover;
+    object-fit: cover;
     background-repeat: no-repeat;
     position: relative;
     color: var(--color-word);
@@ -188,7 +227,7 @@ main{
 .banner::before{
     content: "";
     width: 100%;
-    height: 58rem;
+    height: 90vh;
     background-color: #eee;
     opacity: 0.6;
     position: absolute;
@@ -416,6 +455,9 @@ main .home-info .home-info_text{
     border-radius: 1rem;
 }
 .field-info_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
     transition: all 1s ease-in-out;
 }
@@ -622,7 +664,7 @@ main .home-info .home-info_text{
 .news-bottom{
     padding: 0 10rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 3rem;
     padding-bottom: 1rem;
 }
@@ -716,9 +758,10 @@ main .home-info .home-info_text{
 /* Footer */
 footer{
     background-image: url(./img/bgFooter.jpg);
+    width: 100%;
+    height: auto;
     background-repeat: no-repeat;
-    
-    height: 65rem;
+    background-size: cover;
     position: relative;
     z-index: 0;
 }
@@ -787,4 +830,17 @@ footer::before{
     padding: 1rem;
 }
 
+
+/* css ho tro javascript */
+.is-show{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.is-none{
+    opacity: 0;
+    visibility: hidden;
+}
+.active{
+    color: var(--color-hover) !important;
+}
 

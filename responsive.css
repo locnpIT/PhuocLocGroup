@@ -1,0 +1,126 @@
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+     
+    
+    
+    
+    /* Lĩnh vực hoạt động */
+     .field .field-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .field-info .field-info_item {
+        width: 50%;   
+        height: 100vh;
+    }
+
+
+
+    
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+
+
+    /* menu */
+
+    .logo{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    header{
+        display: flex;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .header-detail li{
+        
+    }
+    .menu .menu-list{
+        display: flex;
+        transform: translateY(50%);
+        /* width: 10rem; */
+        flex-direction: column;
+        position: relative;
+        z-index: 6;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu .menu-list li{
+        display: block;
+        width: 100%;
+        /* background-color: rgba(255, 255, 255, 0.8); */
+        background-color: white;
+        text-align: left;
+        padding-left: 3rem;
+    }
+    .menu .menu-list li:not(:last-child){
+        border-bottom: 1px solid #ccc;
+    }
+    /* dropdowlist */
+    .dropdown-list{
+        left: 0;
+        transform: translateX(-125%);
+        transition: 0.2s linear;
+    }
+    .dropdown .dropdown-list{
+        display: block;
+        width: 20rem;
+    }
+    .dropdown .dropdown-list .dropdown-item{
+        text-align: start;
+        cursor: pointer;
+        transition: 0.2s linear;    
+        padding: 2rem 2rem;
+        display: block;
+        width: 25rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-left: 0.5rem solid transparent;
+    }
+
+    .menu .menulist li .icon-home{
+        display: none;
+    }
+    .icon-home{
+        display: none;
+    }
+    .icon-home i{
+        display: none;
+    }
+    .icon-home::after{
+        display: none;
+        visibility: hidden;
+    }
+
+
+    .toggle-btn{
+        display: inline-block;
+        cursor: pointer;
+    }
+    /* Lĩnh vực hoạt động */
+    .field .field-info{
+        display: block;
+    }
+    .field-info .field-info_item {
+        width: 100%;   
+        height: 100vh;
+    }
+    /* footer */
+   .footer-right .footer-detail{
+        width: 50%;
+    }
+    .container .footer-top{
+        display: block;
+    }
+    .container .footer-left{
+        display: block;
+        margin: 0 auto;
+    }
+    
+}
