@@ -831,6 +831,16 @@ footer::before{
 }
 
 
+
+/* css ho tro respondsive */
+#news-head_rightRespondsive{
+    display: none;
+    padding: 1rem;
+    font-size: 1.6rem;
+    outline-color: var(--color-word);
+}
+
+
 /* css ho tro javascript */
 .is-show{
     opacity: 1 !important;
