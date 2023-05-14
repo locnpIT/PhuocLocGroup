@@ -489,19 +489,19 @@ main .home-info .home-info_text{
     background-size: cover;
     padding-bottom: 1rem;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .real-estate_desc{
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr) );
     grid-gap: 5rem;
     width: 100%;
+
 }
 .real-estate_product{
     width: 100%;
+    height: 100%;
 }
 .product-body img{
     width: 100%;

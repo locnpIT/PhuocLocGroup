@@ -24,6 +24,7 @@
         display: flex;
         padding-left: 1rem;
         padding-right: 1rem;
+        width: 100%;
     }
     .menu .menu-list{
         display: flex;
@@ -97,6 +98,7 @@
 @media (max-width: 740px) {
     /* menu */
     header{
+        width: 100%;
         display: flex;
         padding-left: 1rem;
         padding-right: 1rem;
