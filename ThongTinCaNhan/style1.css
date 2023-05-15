@@ -83,7 +83,7 @@ html{
     background-color: grey;
     border-radius: 1rem;
     position: relative;
-    margin-right: 11rem;
+    margin-right: 17rem;
 }
 .bar1::before{
     content: "";
@@ -100,7 +100,7 @@ html{
     background-color: grey;
     border-radius: 1rem;
     position: relative;
-    margin-right: 11rem;
+    margin-right: 17rem;
 }
 .bar2::before{
     content: "";
@@ -117,7 +117,7 @@ html{
     background-color: grey;
     border-radius: 1rem;
     position: relative;
-    margin-right: 11rem;
+    margin-right: 17rem;
 }
 .bar3::before{
     content: "";
@@ -134,7 +134,7 @@ html{
     background-color: grey;
     border-radius: 1rem;
     position: relative;
-    margin-right: 11rem;
+    margin-right: 17rem;
 }
 .bar4::before{
     content: "";
@@ -151,7 +151,7 @@ html{
     background-color: grey;
     border-radius: 1rem;
     position: relative;
-    margin-right: 11rem;
+    margin-right: 17rem;
 }
 .bar5::before{
     content: "";
@@ -168,7 +168,7 @@ html{
     background-color: grey;
     border-radius: 1rem;
     position: relative;
-    margin-right: 11rem;
+    margin-right: 17rem;
 }
 .bar6::before{
     content: "";
